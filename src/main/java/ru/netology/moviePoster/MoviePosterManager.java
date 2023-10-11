@@ -15,9 +15,6 @@ public class MoviePosterManager {
         return limitManager;
     }
 
-
-
-
     public void addNewMovie(PosterManager movie) {
         PosterManager[] tmp = new PosterManager[movies.length + 1];
         for (int i = 0; i < movies.length; i++) {
@@ -34,8 +31,7 @@ public class MoviePosterManager {
 
     public PosterManager[] findLast() {
         int resultLenght;
-        if (limitManager > movies.length)
-        {
+        if (limitManager > movies.length) {
             resultLenght = movies.length;
         } else {
             resultLenght = limitManager;
